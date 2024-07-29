@@ -22,16 +22,22 @@
       { text: 'Super good', id: 823423 },
       { text: 'You are the best', id: 2039842 },
       { text: 'Ramen is my fav food ever', id: 123523 },
-      { text: 'Nice Nice Nice!', id: 542328 }
+      { text: 'Nice Nice Nice!', id: 823423 }
     ];
 
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+    const arraySome = people.some((check19) => check19.year <= 2024 - 19);
+    console.log(arraySome);
     // Array.prototype.every() // is everyone 19 or older?
+    const arrayEvery = people.every((check19) => check19.year <= 2024 - 19);
+    console.log(arrayEvery);
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
+    const arrayFind = comments.find((comment) => comment.id === 823423);
+    console.log(arrayFind);
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
